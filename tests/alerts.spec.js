@@ -1,5 +1,5 @@
 const { test, expect } = require("@playwright/test");
-test.skip("alerts handling", async ({ page }) => {
+test("alerts handling", async ({ page }) => {
   await page.goto("https://testautomationpractice.blogspot.com/");
 
   //Enabling alerts
@@ -13,7 +13,7 @@ test.skip("alerts handling", async ({ page }) => {
   await page.waitForTimeout(3000);
 });
 
-test.skip("confirmation popup", async ({ page }) => {
+test("confirmation popup", async ({ page }) => {
   await page.goto("https://testautomationpractice.blogspot.com/");
 
   //Enabling alerts

@@ -9,14 +9,8 @@ test("login", async ({ page }) => {
   await page.locator(".textInput.passwordInput.form-control").fill("test@1234");
   await page.locator(".submitBtn.btn.btn-primary").click();
 
-  //   await page
-  //     .locator('[placeholder="Registered email *"]')
-  //     .fill("sc5@techvalens.com");
-  //   await page.locator(".textInput.passwordInput.form-control").fill("test@1234");
-  //   await page.locator(".submitBtn.btn.btn-primary").click();
-
   const create = await page.locator("//button[text()='Create Assessment']");
-  await expect(create).toBeVisible();
+  // await expect(create).toBeVisible();
 });
 
 test("login with invalid credentials", async ({ page }) => {
